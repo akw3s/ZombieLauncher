@@ -1,0 +1,2 @@
+rootProject.name = 'ZombieLauncher'
+include 'core', 'launcher'

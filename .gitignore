@@ -1,0 +1,12 @@
+.gradle/
+**/build/
+**/bin/
+automodpack/
+logs/
+launcher-cache/
+launcher/javafx-sdk/
+*.log
+*.tmp
+*.zip
+*.class
+.vscode/

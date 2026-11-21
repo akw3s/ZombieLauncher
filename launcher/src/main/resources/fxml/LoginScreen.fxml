@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="login-screen" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blen.launcher.controller.LoginScreenController">
+
+    <HBox alignment="CENTER_RIGHT" maxWidth="Infinity">
+        <Button fx:id="settingsButton" onAction="#handleSettings" text="Settings"
+                styleClass="header-button"/>
+    </HBox>
+
+    <padding>
+        <Insets bottom="48.0" left="60.0" right="60.0" top="28.0"/>
+    </padding>
+
+    <ImageView fitHeight="108.0" fitWidth="108.0" preserveRatio="true">
+        <image>
+            <Image url="@../icons/icon.png"/>
+        </image>
+    </ImageView>
+
+    <Label fx:id="titleLabel" styleClass="app-title" text="ZombieLauncher">
+        <font>
+            <Font size="32.0"/>
+        </font>
+    </Label>
+
+    <Label fx:id="subtitleLabel" styleClass="subtitle"
+           text="Your Forge 1.20.1 modded world starts here."/>
+
+    <TextField fx:id="usernameField" maxWidth="340.0" promptText="Minecraft username"
+               styleClass="input-field"/>
+
+    <HBox alignment="CENTER" spacing="15.0">
+        <Button fx:id="loginButton" onAction="#handleLogin" text="Continue" styleClass="primary-button"/>
+    </HBox>
+
+    <Label fx:id="footnoteLabel" styleClass="footnote"
+           text="Offline profile • Multiplayer requires a server that allows offline accounts"/>
+</VBox>
